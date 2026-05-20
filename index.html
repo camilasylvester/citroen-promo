@@ -629,10 +629,7 @@
     const err = document.getElementById('err4');
     btn.disabled = true; btn.textContent = 'Guardando...';
 
-    const nc      = document.getElementById('nombreCompleto').value.trim();
-    const partes  = nc.split(' ');
-    const nombre  = partes[0];
-    const apellido= partes.slice(1).join(' ');
+    const nombre  = document.getElementById('nombreCompleto').value.trim();
     const email   = document.getElementById('email').value.trim();
     const patente = document.getElementById('patente').value.trim();
 
