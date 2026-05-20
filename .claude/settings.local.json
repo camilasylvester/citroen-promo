@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(file /Users/camilasylvester/Desktop/mopar-mundial/*)",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}
