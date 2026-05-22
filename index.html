@@ -654,13 +654,13 @@
         const data = await res.json();
         if (data?.[0]?.id) sessionStorage.setItem('registroId', data[0].id);
       }
-      window.location.href = 'juego.html';
+      window.location.href = 'listo.html';
     } catch {
       // Igual redirige al juego aunque falle Supabase
       sessionStorage.setItem('jugador', nombre);
       sessionStorage.setItem('jugadorEmail', email);
       sessionStorage.setItem('concesionario', concesionarioEleg);
-      window.location.href = 'juego.html';
+      window.location.href = 'listo.html';
     }
   }
 

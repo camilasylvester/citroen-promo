@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peugeot — ¡Ya estás participando!</title>
+  <style>
+    @font-face { font-family:'PeugeotNew'; src:url('fonts/PeugeotNewExtraLight.otf'); font-weight:200; }
+    @font-face { font-family:'PeugeotNew'; src:url('fonts/PeugeotNewLight.otf');      font-weight:300; }
+    @font-face { font-family:'PeugeotNew'; src:url('fonts/PeugeotNewRegular.otf');    font-weight:400; }
+    @font-face { font-family:'PeugeotNew'; src:url('fonts/PeugeotNewBold.otf');       font-weight:700; }
+    @font-face { font-family:'PeugeotNew'; src:url('fonts/PeugeotNewBlack.otf');      font-weight:900; }
+
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'PeugeotNew', sans-serif;
+      height: 100dvh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* FONDO */
+    .bg {
+      position: fixed; inset: 0;
+      background-image: url('cancha.png');
+      background-size: cover;
+      background-position: center 60%;
+      filter: brightness(0.55) saturate(0.75);
+      z-index: 0;
+    }
+
+    .overlay {
+      position: fixed; inset: 0;
+      background:
+        radial-gradient(ellipse 100% 80% at 50% 50%,
+          rgba(0,0,0,0.65) 0%,
+          rgba(0,0,0,0.4) 55%,
+          transparent 100%
+        ),
+        linear-gradient(to bottom,
+          rgba(0,0,0,0.3) 0%,
+          rgba(0,0,0,0.55) 50%,
+          rgba(0,0,0,0.3) 100%
+        );
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* CONTENIDO */
+    .contenido {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 36px;
+      gap: 0;
+    }
+
+    /* LOGO */
+    .logo {
+      width: 72px;
+      height: auto;
+      margin-bottom: 32px;
+      filter:
+        drop-shadow(0 0 16px rgba(255,255,255,0.5))
+        drop-shadow(0 0 40px rgba(255,255,255,0.2));
+    }
+
+    /* TÍTULO */
+    .titulo {
+      font-size: clamp(28px, 8vw, 40px);
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 1;
+      letter-spacing: -0.5px;
+      margin-bottom: 24px;
+    }
+
+    /* CUERPO */
+    .cuerpo {
+      font-size: 15px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.65;
+      margin-bottom: 12px;
+      max-width: 300px;
+    }
+
+    .cuerpo strong {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    /* SEPARADOR */
+    .sep {
+      width: 40px;
+      height: 1px;
+      background: rgba(255,255,255,0.25);
+      margin: 20px auto 20px;
+    }
+
+    /* CALL TO ACTION */
+    .cta {
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.55;
+      max-width: 280px;
+      margin-bottom: 48px;
+    }
+
+    .cta strong {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    /* BOTÓN */
+    .btn {
+      background: #fff;
+      color: #000;
+      border: none;
+      border-radius: 100px;
+      padding: 16px 48px;
+      font-family: 'PeugeotNew', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+    }
+
+    /* Animación de entrada */
+    .contenido {
+      animation: fadeUp 0.6s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg"></div>
+  <div class="overlay"></div>
+
+  <div class="contenido">
+    <img class="logo" src="Peugeot-Blason-Flat-RVB-WBG.png" alt="Peugeot"/>
+
+    <div class="titulo">¡Ya estás<br>participando!</div>
+
+    <p class="cuerpo">
+      Tu registro te da <strong>una chance</strong> en el sorteo del gran premio final.<br>
+      Pero podés ir por más.
+    </p>
+
+    <div class="sep"></div>
+
+    <p class="cta">
+      <strong>Pateá el penal y duplicá<br>tus chances de ganar.</strong>
+    </p>
+
+    <button class="btn" onclick="window.location.href='juego.html'">
+      ¡A jugar!
+    </button>
+  </div>
+
+</body>
+</html>
