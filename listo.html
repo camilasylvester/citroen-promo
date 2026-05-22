@@ -124,23 +124,32 @@
 
     /* BOTÓN */
     .btn {
-      background: #fff;
-      color: #000;
+      width: 100%;
+      max-width: 320px;
+      background: linear-gradient(160deg, rgba(255,255,255,0.96) 0%, rgba(215,215,215,0.9) 100%);
+      color: #111;
       border: none;
-      border-radius: 100px;
-      padding: 16px 48px;
+      border-radius: 12px;
+      padding: 16px 20px;
       font-family: 'PeugeotNew', sans-serif;
-      font-size: 13px;
+      font-size: 11px;
       font-weight: 700;
-      letter-spacing: 2.5px;
+      letter-spacing: 3px;
       text-transform: uppercase;
       cursor: pointer;
-      transition: transform 0.15s, box-shadow 0.15s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      transition: opacity 0.2s, transform 0.12s;
       box-shadow: 0 4px 24px rgba(0,0,0,0.4);
     }
 
+    .btn::after { content: '→'; font-size: 16px; font-weight: 400; }
+
     .btn:active {
-      transform: scale(0.97);
+      transform: scale(0.985);
+      opacity: 0.82;
     }
 
     /* Animación de entrada */
@@ -162,7 +171,7 @@
   <div class="contenido">
     <img class="logo" src="Peugeot-Blason-Flat-RVB-WBG.png" alt="Peugeot"/>
 
-    <div class="titulo">¡Ya estás<br>participando!</div>
+    <div class="titulo"><span style="display:block;margin-bottom:10px">¡Ya estás</span>participando!</div>
 
     <p class="cuerpo">
       Tu registro te da <strong>una chance</strong> en el sorteo del gran premio final.<br>
