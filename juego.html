@@ -321,17 +321,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0,0,0,0.6);
-  border: 0.5px solid rgba(255,255,255,0.12);
+  background: rgba(218,41,28,0.18);
+  border: 0.5px solid rgba(218,41,28,0.35);
   border-radius: 16px;
-  padding: 18px 32px;
+  padding: 24px 36px;
   text-align: center;
   opacity: 0;
   pointer-events: none;
   z-index: 99;
-  min-width: 230px;
-  max-width: 88vw;
+  min-width: 260px;
+  max-width: 90vw;
   transition: none;
+  box-shadow: inset 0 0 60px rgba(218,41,28,0.12);
 }
 
 .cartel-icono {
@@ -346,7 +347,7 @@ body {
 }
 
 .cartel-texto {
-  font-size: 36px;
+  font-size: 58px;
   font-weight: 900;
   font-family: 'CitroenType', sans-serif;
   letter-spacing: 2px;
@@ -356,13 +357,13 @@ body {
 }
 
 .cartel-sub {
-  margin-top: 10px;
-  font-size: 12px;
+  margin-top: 12px;
+  font-size: 16px;
   font-weight: 300;
   font-family: 'CitroenType', sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,0.80);
   line-height: 1.5;
 }
 
@@ -704,15 +705,15 @@ body {
       textoEl.textContent = '¡GOL!';
       subEl.innerHTML     = 'Ganaste doble chance<br/>al premio final';
       badgeEl.innerHTML   = '';
-      cartelito.style.setProperty('--glow-color', 'rgba(255,255,255,0.95)');
-      cartelito.style.setProperty('--glow-faded', 'rgba(255,255,255,0.35)');
+      cartelito.style.setProperty('--glow-color', 'rgba(218,41,28,0.95)');
+      cartelito.style.setProperty('--glow-faded', 'rgba(218,41,28,0.45)');
     } else {
       iconoEl.innerHTML   = logoHTML;
       textoEl.textContent = '¡ATAJADA!';
       subEl.textContent   = 'Participás igual del sorteo final.';
       badgeEl.innerHTML   = '';
-      cartelito.style.setProperty('--glow-color', 'rgba(255,255,255,0.6)');
-      cartelito.style.setProperty('--glow-faded', 'rgba(255,255,255,0.2)');
+      cartelito.style.setProperty('--glow-color', 'rgba(218,41,28,0.75)');
+      cartelito.style.setProperty('--glow-faded', 'rgba(218,41,28,0.30)');
     }
 
     cartelito.style.animation = 'none';
