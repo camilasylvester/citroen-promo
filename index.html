@@ -576,7 +576,7 @@
   async function irPaso3() {
     const pat = document.getElementById('patente').value.trim().toUpperCase();
     const err = document.getElementById('err2');
-    const btn = document.querySelector('#step2 .btn-siguiente');
+    const btn = document.querySelector('#footerStep2 .btn-siguiente');
 
     if (pat.length < 6) { err.textContent = 'Ingresá una patente válida.'; return; }
     err.textContent = '';
