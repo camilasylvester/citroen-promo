@@ -172,6 +172,9 @@ const CONCESIONARIOS = {
     "Concordia": [
       { nombre: "Full Car", direccion: "Av. Eva Perón 2508" }
     ],
+    "Concepción del Uruguay": [
+      { nombre: "Celia Torra 31", direccion: "" }
+    ],
     "Gualeguaychú": [
       { nombre: "Romani", direccion: "3 de caballeria 426" }
     ],
