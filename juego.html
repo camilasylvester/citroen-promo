@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peugeot - El Desafío</title>
-  <link rel="preload" href="arquerop.avif" as="image" type="image/avif">
+  <title>Citroën - El Desafío</title>
+  <link rel="preload" href="arquerop.png" as="image">
   <link rel="preload" href="arqueroi.png" as="image">
   <link rel="preload" href="arquerod.png" as="image">
   <link rel="preload" href="cancha.avif" as="image" type="image/avif">
   <link rel="preload" href="pelota.avif" as="image" type="image/avif">
   <style>
-    @font-face { font-family: 'PeugeotNew'; src: url('fonts/PeugeotNewRegular.otf');    font-weight: 400; font-style: normal; }
-    @font-face { font-family: 'PeugeotNew'; src: url('fonts/PeugeotNewBold.otf');       font-weight: 700; font-style: normal; }
-    @font-face { font-family: 'PeugeotNew'; src: url('fonts/PeugeotNewBlack.otf');      font-weight: 900; font-style: normal; }
-    @font-face { font-family: 'PeugeotNew'; src: url('fonts/PeugeotNewLight.otf');      font-weight: 300; font-style: normal; }
-    @font-face { font-family: 'PeugeotNew'; src: url('fonts/PeugeotNewExtraLight.otf'); font-weight: 200; font-style: normal; }
+    @font-face { font-family: 'CitroenType'; src: url('fonts/CitroenType-Regular.ttf');    font-weight: 400; font-style: normal; }
+    @font-face { font-family: 'CitroenType'; src: url('fonts/CitroenType-Bold.ttf');       font-weight: 700; font-style: normal; }
+    @font-face { font-family: 'CitroenType'; src: url('fonts/CitroenType-Black.ttf');      font-weight: 900; font-style: normal; }
+    @font-face { font-family: 'CitroenType'; src: url('fonts/CitroenType-Light.ttf');      font-weight: 300; font-style: normal; }
+    @font-face { font-family: 'CitroenType'; src: url('fonts/CitroenType-ExtraLight.ttf'); font-weight: 200; font-style: normal; }
   </style>
   <style>
 :root {
@@ -30,7 +30,7 @@
 body {
   background: var(--negro);
   color: var(--blanco);
-  font-family: 'PeugeotNew', sans-serif;
+  font-family: 'CitroenType', sans-serif;
   height: 100vh;
   overflow: hidden;
 }
@@ -233,7 +233,7 @@ body {
 .titulo-overlay h1 {
   font-size: 34px;
   font-weight: 900;
-  font-family: 'PeugeotNew', sans-serif;
+  font-family: 'CitroenType', sans-serif;
   letter-spacing: 1px;
   line-height: 1.25;
   text-transform: uppercase;
@@ -341,13 +341,14 @@ body {
 .cartel-icono img {
   width: 90px;
   height: auto;
-  filter: drop-shadow(0 0 14px rgba(255,255,255,0.5)) drop-shadow(0 0 30px rgba(255,255,255,0.2));
+  filter: invert(1);
+  mix-blend-mode: screen;
 }
 
 .cartel-texto {
   font-size: 36px;
   font-weight: 900;
-  font-family: 'PeugeotNew', sans-serif;
+  font-family: 'CitroenType', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: white;
@@ -358,7 +359,7 @@ body {
   margin-top: 10px;
   font-size: 12px;
   font-weight: 300;
-  font-family: 'PeugeotNew', sans-serif;
+  font-family: 'CitroenType', sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: rgba(255,255,255,0.65);
@@ -373,7 +374,7 @@ body {
   border: 0.5px solid rgba(255,255,255,0.18);
   border-radius: 6px;
   padding: 6px 18px;
-  font-family: 'PeugeotNew', sans-serif;
+  font-family: 'CitroenType', sans-serif;
   font-size: 11px;
   font-weight: 300;
   letter-spacing: 3px;
@@ -431,7 +432,7 @@ body {
   transform: translateX(-50%);
   font-size: 11px;
   font-weight: 700;
-  font-family: 'PeugeotNew', sans-serif;
+  font-family: 'CitroenType', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: rgba(255,255,255,0.5);
@@ -497,7 +498,7 @@ body {
   </svg>
 
   <div class="arquero-figura" id="arquero">
-    <img id="arqueroImg" src="arquerop.avif" alt="arquero"/>
+    <img id="arqueroImg" src="arquerop.png" alt="arquero"/>
   </div>
 
   <div class="pelota-anim" id="pelotaAnim">
@@ -696,7 +697,7 @@ body {
     document.querySelector('.titulo-overlay').style.opacity = '0';
     document.querySelector('.titulo-overlay').style.transition = 'opacity 0.3s';
 
-    const logoHTML = '<img src="Peugeot-Blason-Flat-RVB-WBG.png" alt="Peugeot"/>';
+    const logoHTML = '<img src="Citroen-Logo.png" alt="Citroën"/>';
 
     if (esGol) {
       iconoEl.innerHTML   = logoHTML;

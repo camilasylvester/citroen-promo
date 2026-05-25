@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peugeot — ¡Ya estás participando!</title>
+  <title>Citroën — ¡Ya estás participando!</title>
   <style>
-    @font-face { font-family:'PeugeotNew'; src:url('fonts/PeugeotNewExtraLight.otf'); font-weight:200; }
-    @font-face { font-family:'PeugeotNew'; src:url('fonts/PeugeotNewLight.otf');      font-weight:300; }
-    @font-face { font-family:'PeugeotNew'; src:url('fonts/PeugeotNewRegular.otf');    font-weight:400; }
-    @font-face { font-family:'PeugeotNew'; src:url('fonts/PeugeotNewBold.otf');       font-weight:700; }
-    @font-face { font-family:'PeugeotNew'; src:url('fonts/PeugeotNewBlack.otf');      font-weight:900; }
+    @font-face { font-family:'CitroenType'; src:url('fonts/CitroenType-ExtraLight.ttf'); font-weight:200; }
+    @font-face { font-family:'CitroenType'; src:url('fonts/CitroenType-Light.ttf');      font-weight:300; }
+    @font-face { font-family:'CitroenType'; src:url('fonts/CitroenType-Regular.ttf');    font-weight:400; }
+    @font-face { font-family:'CitroenType'; src:url('fonts/CitroenType-Bold.ttf');       font-weight:700; }
+    @font-face { font-family:'CitroenType'; src:url('fonts/CitroenType-Black.ttf');      font-weight:900; }
 
     *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 
     body {
       background: #000;
       color: #fff;
-      font-family: 'PeugeotNew', sans-serif;
+      font-family: 'CitroenType', sans-serif;
       height: 100dvh;
       overflow: hidden;
       display: flex;
@@ -65,13 +65,32 @@
     }
 
     /* LOGO */
+    .logo-wrap {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+
+    .logo-wrap::before {
+      content: '';
+      position: absolute;
+      width: 180px; height: 180px;
+      background: radial-gradient(ellipse at 50% 50%,
+        rgba(218,41,28,0.55) 0%,
+        rgba(218,41,28,0.20) 45%,
+        transparent 70%
+      );
+      pointer-events: none;
+    }
+
     .logo {
       width: 110px;
       height: auto;
-      margin-bottom: 32px;
-      filter:
-        drop-shadow(0 0 16px rgba(255,255,255,0.5))
-        drop-shadow(0 0 40px rgba(255,255,255,0.2));
+      position: relative;
+      filter: invert(1);
+      mix-blend-mode: screen;
     }
 
     /* TÍTULO */
@@ -131,7 +150,7 @@
       border: none;
       border-radius: 12px;
       padding: 16px 20px;
-      font-family: 'PeugeotNew', sans-serif;
+      font-family: 'CitroenType', sans-serif;
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 3px;
@@ -169,7 +188,9 @@
   <div class="overlay"></div>
 
   <div class="contenido">
-    <img class="logo" src="Peugeot-Blason-Flat-RVB-WBG.png" alt="Peugeot"/>
+    <div class="logo-wrap">
+      <img class="logo" src="Citroen-Logo.png" alt="Citroën"/>
+    </div>
 
     <div class="titulo"><span style="display:block;margin-bottom:10px">¡Ya estás</span>participando!</div>
 

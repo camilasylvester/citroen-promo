@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peugeot — Mundial 2026</title>
+  <title>Citroën — Mundial 2026</title>
   <style>
-    @font-face { font-family:'PeugeotNew'; src:url('fonts/PeugeotNewExtraLight.otf'); font-weight:200; }
-    @font-face { font-family:'PeugeotNew'; src:url('fonts/PeugeotNewLight.otf');      font-weight:300; }
-    @font-face { font-family:'PeugeotNew'; src:url('fonts/PeugeotNewRegular.otf');    font-weight:400; }
-    @font-face { font-family:'PeugeotNew'; src:url('fonts/PeugeotNewBold.otf');       font-weight:700; }
-    @font-face { font-family:'PeugeotNew'; src:url('fonts/PeugeotNewBlack.otf');      font-weight:900; }
+    @font-face { font-family:'CitroenType'; src:url('fonts/CitroenType-ExtraLight.ttf'); font-weight:200; }
+    @font-face { font-family:'CitroenType'; src:url('fonts/CitroenType-Light.ttf');      font-weight:300; }
+    @font-face { font-family:'CitroenType'; src:url('fonts/CitroenType-Regular.ttf');    font-weight:400; }
+    @font-face { font-family:'CitroenType'; src:url('fonts/CitroenType-Bold.ttf');       font-weight:700; }
+    @font-face { font-family:'CitroenType'; src:url('fonts/CitroenType-Black.ttf');      font-weight:900; }
 
     *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
 
     body {
       background: #000;
       color: #fff;
-      font-family: 'PeugeotNew', sans-serif;
+      font-family: 'CitroenType', sans-serif;
       height: 100dvh;
       overflow: hidden;
     }
@@ -85,8 +85,8 @@
       position: absolute;
       width: 180px; height: 140px;
       background: radial-gradient(ellipse at 50% 40%,
-        rgba(255,255,255,0.22) 0%,
-        rgba(255,255,255,0.06) 45%,
+        rgba(218,41,28,0.30) 0%,
+        rgba(218,41,28,0.10) 45%,
         transparent 70%
       );
       top: 50%; left: 50%;
@@ -95,13 +95,12 @@
     }
 
     .header img {
-      width: 90px;
+      width: 120px;
       height: auto;
       position: relative;
       z-index: 1;
-      filter:
-        drop-shadow(0 0 12px rgba(255,255,255,0.55))
-        drop-shadow(0 0 30px rgba(255,255,255,0.25));
+      filter: invert(1);
+      mix-blend-mode: screen;
     }
 
     /* ── STEPPER ─────────────────────────────────── */
@@ -122,8 +121,8 @@
       transition: all 0.35s;
     }
 
-    .stepper-dot.done   { background: rgba(255,255,255,0.55); border-color: rgba(255,255,255,0.55); }
-    .stepper-dot.active { background: white; border-color: white; box-shadow: 0 0 8px rgba(255,255,255,0.6); }
+    .stepper-dot.done   { background: rgba(218,41,28,0.7); border-color: rgba(218,41,28,0.7); }
+    .stepper-dot.active { background: #DA291C; border-color: #DA291C; box-shadow: 0 0 8px rgba(218,41,28,0.7); }
 
     .stepper-line {
       flex: 1;
@@ -147,7 +146,7 @@
     /* ── PASOS ───────────────────────────────────── */
     .step {
       position: absolute; inset: 0;
-      padding: 215px 32px 36px;
+      padding: 205px 32px 36px;
       display: flex;
       flex-direction: column;
       transform: translateX(100%);
@@ -163,7 +162,7 @@
 
     /* ── TÍTULOS ─────────────────────────────────── */
     .step-titulo {
-      font-size: clamp(26px, 7vw, 36px);
+      font-size: clamp(30px, 8vw, 42px);
       font-weight: 900;
       text-transform: uppercase;
       line-height: 0.92;
@@ -176,11 +175,11 @@
       font-style: normal;
       color: rgba(255,255,255,0.22);
       display: block;
-      margin-top: 16px;
+      margin-top: 4px;
     }
 
     .step-subtitulo {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 300;
       color: rgba(255,255,255,0.55);
       text-align: center;
@@ -221,7 +220,7 @@
       background: transparent;
       border: none; outline: none;
       color: #ffffff;
-      font-family: 'PeugeotNew', sans-serif;
+      font-family: 'CitroenType', sans-serif;
       font-size: 16px;
       font-weight: 300;
       caret-color: white;
@@ -239,6 +238,7 @@
 
     /* Spacer que empuja el botón hacia abajo */
     .step-spacer { flex: 1; }
+    #step2 .step-spacer { flex: 0; min-height: 40px; }
 
     /* ── OPCIONES ────────────────────────────────── */
     .opciones-lista {
@@ -253,7 +253,7 @@
       border: 1px solid rgba(255,255,255,0.07);
       border-radius: 10px;
       padding: 14px 18px;
-      font-size: 14px; font-weight: 300;
+      font-size: 16px; font-weight: 300;
       color: rgba(255,255,255,0.6);
       cursor: pointer;
       transition: all 0.15s;
@@ -262,8 +262,9 @@
 
     .opcion-item:active,
     .opcion-item.seleccionado {
-      background: rgba(255,255,255,0.1);
-      border-color: rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.07);
+      border-color: rgba(255,255,255,0.15);
+      border-left: 3px solid #DA291C;
       color: white;
     }
 
@@ -275,8 +276,8 @@
       border: none;
       border-radius: 12px;
       padding: 16px 20px;
-      font-family: 'PeugeotNew', sans-serif;
-      font-size: 11px;
+      font-family: 'CitroenType', sans-serif;
+      font-size: 13px;
       font-weight: 700;
       letter-spacing: 3px;
       text-transform: uppercase;
@@ -319,7 +320,7 @@
       z-index: 20;
       background: none; border: none;
       color: rgba(255,255,255,0.32);
-      font-family: 'PeugeotNew', sans-serif;
+      font-family: 'CitroenType', sans-serif;
       font-size: 12px; font-weight: 300;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -363,7 +364,7 @@
   <div class="header">
     <div class="logo-wrap">
       <div class="logo-halo"></div>
-      <img src="Peugeot-Blason-Flat-RVB-WBG.png" alt="Peugeot"/>
+      <img src="Citroen-Logo.png" alt="Citroën"/>
     </div>
     <div class="stepper" id="progressBar">
       <div class="stepper-dot active" id="pb1"></div>
@@ -419,7 +420,7 @@
   <!-- ── PASO 2 ── -->
   <div class="step" id="step2">
     <div class="step-titulo">Tu<br/><em>patente</em></div>
-    <div class="step-subtitulo">Ingresá la patente de tu Peugeot</div>
+    <div class="step-subtitulo">Ingresá la patente de tu Citroën</div>
 
     <div class="field-group field-patente">
       <div class="field-lbl">Patente del vehículo</div>
@@ -707,7 +708,7 @@
         body: JSON.stringify({
           nombre, email, patente,
           provincia: provinciaElegida, concesionario: concesionarioEleg,
-          resultado: 'pendiente', chances: 1
+          resultado: 'pendiente', chances: 1, marca: 'citroen'
         })
       });
 
