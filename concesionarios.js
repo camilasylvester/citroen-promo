@@ -1,358 +1,304 @@
-// AUTO-GENERATED from CSV
-
 const CONCESIONARIOS = {
   "CABA": {
-    "Caballito": [
-      { nombre: "GIAMA", direccion: "Avda. La Plata 767" },
-      { nombre: "LE MERIDIEN", direccion: "Av. Rivadavia 6160" }
+    "Balvanera": [
+      { nombre: "Giama", direccion: "Adolfo Alsina 2369" }
     ],
-    "Villa Pueyrredón": [
-      { nombre: "AUTO ASIST", direccion: "Avda de los Constituyentes 5750" }
+    "Coghlan": [
+      { nombre: "Autodrive", direccion: "Av. Ricardo Balbin 2841" }
     ],
-    "Palermo": [
-      { nombre: "BREST", direccion: "Gascón 1445" },
-      { nombre: "L'EXPRES", direccion: "Cabrera 3659" },
-      { nombre: "ROSEDAL", direccion: "Ortega y Gasset 1770" }
+    "Flores": [
+      { nombre: "Auto Novo", direccion: "Av. Rivadavia 7855" }
     ],
-    "Villa Devoto": [
-      { nombre: "D'ARC", direccion: "Av. Lope de Vega 2727" }
+    "Monte Castro": [
+      { nombre: "Auto Novo", direccion: "Marcos Sastre 4420" }
     ],
     "Nuñez": [
-      { nombre: "D'ARC", direccion: "M. Ugarte 1549" }
+      { nombre: "Autogenerali", direccion: "Av. Cabildo 4402" }
     ],
-    "Villa Luro": [
-      { nombre: "DRAGO BERETTA", direccion: "Av. Rivadavia 9851" }
+    "Paternal": [
+      { nombre: "Taraborelli Automobile S.A.", direccion: "Av. San Martín 3080" }
     ],
-    "Almagro": [
-      { nombre: "L'EXPRES", direccion: "Agrelo 4050" }
-    ],
-    "Villa Crespo": [
-      { nombre: "SVA", direccion: "Av. Warnes 400" },
-      { nombre: "SVA", direccion: "Rocamora 4538" }
-    ],
-    "Colegiales": [
-      { nombre: "SVA", direccion: "Av. Alvarez Thomas 1020/1032" }
+    "Villa Urquiza": [
+      { nombre: "Autogenerali", direccion: "Juramento 4740" }
     ]
   },
   "Buenos Aires": {
-    "Chascomús": [
-      { nombre: "AUTOMOTORES DEL SUR", direccion: "Juan M.de Rosas 705" }
-    ],
-    "Dolores": [
-      { nombre: "AUTOMOTORES DEL SUR", direccion: "Olavarría 946" }
-    ],
-    "Quilmes": [
-      { nombre: "ALBENS", direccion: "Hipólito Yrigoyen 95" }
-    ],
-    "Florencio Varela": [
-      { nombre: "ALBENS", direccion: "Avda. Calchaquí 332" }
-    ],
-    "Victoria": [
-      { nombre: "AUTOFRANCE", direccion: "A. J.D.Perón 2827" }
-    ],
-    "Ituzaingó": [
-      { nombre: "AVIGNON", direccion: "S:Avda Rivadavia 21396, T:Gomensoro 48" }
-    ],
-    "Benavidez": [
-      { nombre: "CHALLANS", direccion: "Colectora Este Ruta 9 nº 39861" }
-    ],
-    "Moron": [
-      { nombre: "NOVO", direccion: "Rivadavia 17.258" }
-    ],
-    "Moreno": [
-      { nombre: "NOVO", direccion: "Mármol 343" }
-    ],
-    "Ramos Mejia": [
-      { nombre: "NAVE MOTORS", direccion: "Av. Rivadavia 13430" }
-    ],
-    "San Martín": [
-      { nombre: "LE MERIDIEN", direccion: "Av.Ricardo Balbín 2669" }
-    ],
-    "Escobar": [
-      { nombre: "ROBAYNA", direccion: "Azcuenaga 1830" }
-    ],
-    "Don Torcuato": [
-      { nombre: "ROBAYNA", direccion: "M.T.de Alvear 1014 (Ruta 202)" }
-    ],
-    "Villa Martelli": [
-      { nombre: "AUTO DEL SOL", direccion: "Méjico 3527" }
-    ],
-    "Pilar": [
-      { nombre: "CHAMONIX", direccion: "Acceso Norte - Ramal Pilar km 52" }
-    ],
-    "Lomas de Zamora": [
-      { nombre: "TOULON", direccion: "Hipólito Yrigoyen 8302" }
-    ],
-    "Lanús": [
-      { nombre: "TOULON", direccion: "Hipólito Yrigoyen 3350" }
-    ],
-    "Vicente López": [
-      { nombre: "SVA", direccion: "Av. Libertador 1875" }
-    ],
-    "Mar del Plata": [
-      { nombre: "BELCHAMP", direccion: "Av. Independencia 2265" },
-      { nombre: "BELCHAMP", direccion: "Juan B. Justo 4368" }
-    ],
-    "Lobos": [
-      { nombre: "BLOIS", direccion: "Ruta Nacional 205 y Avda. Hipólito Irigoyen" }
-    ],
-    "La Plata": [
-      { nombre: "POURTAU", direccion: "Calle 531  Nro 2540 entre 20 y 21" },
-      { nombre: "GALIA", direccion: "Taller: Calle 4 Nro. 1565   -    Rtos.: Calle 64  Nº474" }
-    ],
-    "Coronel Brandsen": [
-      { nombre: "POURTAU", direccion: "Ruta 215 esquina Rawson" }
-    ],
-    "Tortuguitas": [
-      { nombre: "GAULOIS", direccion: "Ruta Panamericana (Ramal Pilar) km 35,5" }
-    ],
-    "Coronel Suarez": [
-      { nombre: "GRAFF", direccion: "Villegas 224" }
-    ],
-    "Pergamino": [
-      { nombre: "GRANVILLE", direccion: "Jujuy 1771" }
-    ],
-    "Junín": [
-      { nombre: "GRANVILLE", direccion: "Francia 976" }
-    ],
-    "San Nicolás": [
-      { nombre: "GRANVILLE", direccion: "Av. Perón 985" }
-    ],
-    "Olavarría": [
-      { nombre: "LE MONT", direccion: "Ruta 226 - km 285" }
-    ],
-    "Tandil": [
-      { nombre: "LE MONT", direccion: "Av. España 37" }
-    ],
-    "Tres Arroyos": [
-      { nombre: "LE MONT", direccion: "Lucio V Lopez 350" }
-    ],
-    "Nueve de Julio": [
-      { nombre: "LENS", direccion: "Av. Mitre 3410" }
-    ],
-    "Trenque Lauquen": [
-      { nombre: "LENS", direccion: "Av.García Salinas 1270" }
-    ],
-    "Chivilcoy": [
-      { nombre: "LENS", direccion: "Avellaneda 430" }
-    ],
-    "Zárate": [
-      { nombre: "ROBAYNA", direccion: "Av.Lavalle 1655" }
+    "9 de Julio": [
+      { nombre: "Auto del Sol", direccion: "Av. San Martín 1557" }
     ],
     "Bahía Blanca": [
-      { nombre: "CORCEL", direccion: "Roca 362" }
-    ]
-  },
-  "Córdoba": {
-    "Ciudad de Córdoba": [
-      { nombre: "AVANT", direccion: "Av. Circunvalación esq. Santa Ana" },
-      { nombre: "AVEC", direccion: "Av.Castro Barros 1155" }
+      { nombre: "Bahía Automotores", direccion: "Misiones 52" }
     ],
-    "Río Cuarto": [
-      { nombre: "AVANT", direccion: "Ruta 36 A005 km 4" }
+    "Berazategui": [
+      { nombre: "Autos Zanet", direccion: "Av. Mitre 1880" }
     ],
-    "Villa María": [
-      { nombre: "SERVICIO LEDESMA", direccion: "Av. Pte. Perón 1373 - Barrio San Justo" }
+    "Brandsen": [
+      { nombre: "Lego Pourtau", direccion: "Rawson y Colectora Ruta 215" }
     ],
-    "San Francisco": [
-      { nombre: "MONTIRONI", direccion: "Urquiza 381" }
+    "Castelar": [
+      { nombre: "Auto Novo", direccion: "Av. E. Zeballos 3147" }
     ],
-    "Río Tercero": [
-      { nombre: "GIODA AUTOMOTORES", direccion: "Arturo Illia 225" }
+    "Coronel Suarez": [
+      { nombre: "Cardys", direccion: "Av. Casey 850" }
     ],
-    "Monte Maíz": [
-      { nombre: "VESUBIO", direccion: "Av Pte.Peròn 1718" }
+    "Don Torcuato": [
+      { nombre: "Venezia Auto", direccion: "Quintanilla 1480" }
     ],
-    "Marcos Juárez": [
-      { nombre: "VESUBIO", direccion: "Bv. Roque Saenz Peña 1051" }
+    "Florida": [
+      { nombre: "Auto del Sol", direccion: "Av. Bartolomé Mitre 1351" }
     ],
-    "Bell Ville": [
-      { nombre: "VESUBIO", direccion: "Colón 1045" }
-    ]
-  },
-  "Mendoza": {
-    "Godoy Cruz": [
-      { nombre: "SUR FRANCE", direccion: "Derqui 58" },
-      { nombre: "SUR FRANCE", direccion: "Víctor Hugo 187" }
+    "Junín": [
+      { nombre: "Lego Pourtau", direccion: "Comandante Cuitiño 27" }
     ],
-    "San Rafael": [
-      { nombre: "ROMA", direccion: "Córdoba 55" }
+    "La Plata": [
+      { nombre: "Lego Pourtau", direccion: "Av. 13 esquina 524" },
+      { nombre: "Peara", direccion: "Av. 149 y 39" }
+    ],
+    "Lobos": [
+      { nombre: "Blois", direccion: "Salgado Oeste 235" },
+      { nombre: "Blois", direccion: "Ruta 205, km 97.5" }
+    ],
+    "Lomas de Zamora": [
+      { nombre: "Autos Zanet", direccion: "Hipólito Yrigoyen 8569" }
+    ],
+    "Luján": [
+      { nombre: "Lyon", direccion: "Av. Pellegrini 943" }
+    ],
+    "Mar del Plata": [
+      { nombre: "Giama", direccion: "Av. Champagnat 2745" }
+    ],
+    "Necochea": [
+      { nombre: "Aliva", direccion: "Av. 59 1045" }
+    ],
+    "Olavarría": [
+      { nombre: "Bahía Automotores", direccion: "Ruta 226 KM 295" }
+    ],
+    "Pergamino": [
+      { nombre: "Montanari", direccion: "Av. Presidente Arturo Illia 1658" }
+    ],
+    "Pilar": [
+      { nombre: "Pilar", direccion: "Ruta Panamericana Km 52" }
+    ],
+    "Pinamar": [
+      { nombre: "Giama", direccion: "Ruta 11 Km 397" }
+    ],
+    "Quilmes": [
+      { nombre: "Autos Zanet", direccion: "Hipólito Yrigoyen 801" }
+    ],
+    "Ramos Mejía": [
+      { nombre: "Auto Novo", direccion: "Av. Rivadavia 13026" }
+    ],
+    "San Fernando": [
+      { nombre: "Autofrance", direccion: "Av. Perón 2827" }
+    ],
+    "San Justo": [
+      { nombre: "Rotter", direccion: "Monseñor Bufano 3250" }
     ],
     "San Martín": [
-      { nombre: "AUT. GRAL. SAN MARTIN", direccion: "L. N. Alem 551/7" }
+      { nombre: "Rotter", direccion: "Av. Ricardo Balbin 1970" }
     ],
-    "Guaymallén": [
-      { nombre: "AUT. GRAL. SAN MARTIN", direccion: "Av. 25 de Mayo 5555 (Lateral Sur de Av. Acceso Este)" }
-    ]
-  },
-  "Santa Fe": {
-    "Venado Tuerto": [
-      { nombre: "AUTOSUR", direccion: "Av.12 de Octubre 1276 (ruta 8)" }
+    "San Miguel": [
+      { nombre: "Taraborelli Automobile S.A.", direccion: "Gaspar Campos 3219" }
     ],
-    "Casilda": [
-      { nombre: "AUTOSUR", direccion: "Ovidio Lagos 1063" }
+    "San Nicolás": [
+      { nombre: "Auto Veneto S.A.", direccion: "Pte Peron 2092" }
     ],
-    "Rosario": [
-      { nombre: "AVEC", direccion: "Av. San Martín 2756 esq.Virasoro" },
-      { nombre: "MARSEILLE", direccion: "Río de Janeiro 770" }
+    "Sarandí": [
+      { nombre: "Verona Automóviles S.A.", direccion: "Av. Mitre 3945" }
     ],
-    "Santa Fé": [
-      { nombre: "NATION", direccion: "Belgrano 2663/77" }
-    ]
-  },
-  "La Pampa": {
-    "Santa Rosa": [
-      { nombre: "VERNON", direccion: "Fiorucci 22" }
+    "Tandil": [
+      { nombre: "Bahía Automotores", direccion: "Av. España 650" }
     ],
-    "General Pico": [
-      { nombre: "VERNON", direccion: "Calle 9 n° 855 Oeste" }
-    ]
-  },
-  "Río Negro": {
-    "Cipolletti": [
-      { nombre: "ARMORIQUE", direccion: "Colectora Fortín 1° división 421, Ruta 22 km 1215" }
+    "Tortuguitas": [
+      { nombre: "Stampa Automotores", direccion: "Ruta Panamericana Km. 35.5" }
     ],
-    "Gral.Roca": [
-      { nombre: "ARMORIQUE", direccion: "Gral.Roca 466" }
+    "Tres Arroyos": [
+      { nombre: "Aliva", direccion: "Av. Belgrano 369" }
     ],
-    "San Carlos de Bariloche": [
-      { nombre: "SAGARIA", direccion: "Remedios de Escalada 274" }
+    "Trenque Lauquen": [
+      { nombre: "Cardys", direccion: "Av. García Salinas 2196" }
     ],
-    "Viedma": [
-      { nombre: "CORCEL", direccion: "Avenida Zatti 459" }
-    ]
-  },
-  "Misiones": {
-    "Puerto Rico": [
-      { nombre: "SEEWALD", direccion: "Gervasio Posadas Nº 125" }
-    ],
-    "Posadas": [
-      { nombre: "LA CONCORDE", direccion: "Lavalle 3135" }
+    "Zárate": [
+      { nombre: "Ital Rouen", direccion: "Av. Lavalle 1650" }
     ]
   },
   "Catamarca": {
     "Catamarca": [
-      { nombre: "ANCASTI", direccion: "Esquiú 786" }
-    ]
-  },
-  "San Luis": {
-    "San Luis": [
-      { nombre: "PARÍS AUTOS", direccion: "Av. Sarmiento 420" }
-    ],
-    "Villa Mercedes": [
-      { nombre: "PARÍS AUTOS", direccion: "Avda. Mitre 688 - esq. Sarmiento" }
-    ]
-  },
-  "La Rioja": {
-    "La Rioja": [
-      { nombre: "ANDINA", direccion: "Av. Juan Manuel de Rosas 1274 - Parque Industrial" }
-    ]
-  },
-  "Jujuy": {
-    "San Salvador de Jujuy": [
-      { nombre: "AUTOCIEL", direccion: "Ruta 9 - Acceso Sur - Las Lomas Nº 2227" }
-    ]
-  },
-  "Tierra del Fuego": {
-    "Rio Grande": [
-      { nombre: "TURENNE", direccion: "General Guemes 994" }
-    ],
-    "Ushuaia": [
-      { nombre: "TURENNE", direccion: "Heroes de malvinas 3649" }
-    ]
-  },
-  "Salta": {
-    "Salta": [
-      { nombre: "EURODYCAR", direccion: "Av. Paraguay 2552" }
-    ]
-  },
-  "Santa Cruz": {
-    "Río Gallegos": [
-      { nombre: "EXPO SUD", direccion: "Angel Vicente Peñaloza 3608" }
-    ]
-  },
-  "San Juan": {
-    "San Juan": [
-      { nombre: "LORENZO", direccion: "Av. Ignacio de la Roza 1665 OESTE" }
+      { nombre: "Ledian", direccion: "Av. Gral. Belgrano 1600 esq. Juan Bellavia" }
     ]
   },
   "Chubut": {
-    "Cdro. Rivadavia": [
-      { nombre: "GRANVILLE", direccion: "Hipolito Yrigoyen 1906 esq. Ladvocat" }
+    "Comodoro Rivadavia": [
+      { nombre: "Autoterra", direccion: "Eustaquio Molina 3035" }
+    ],
+    "Puerto Madryn": [
+      { nombre: "Fiorasi", direccion: "Fontana 116" }
     ],
     "Trelew": [
-      { nombre: "GRANVILLE", direccion: "J. A.Roca 931" }
+      { nombre: "Fiorasi", direccion: "Av. Eva Peron 2020" }
+    ]
+  },
+  "Córdoba": {
+    "Córdoba": [
+      { nombre: "Montironi", direccion: "Monseñor Pablo Cabrera 4935" },
+      { nombre: "Motcor", direccion: "Av. Santa Ana 6569" },
+      { nombre: "Turin", direccion: "Av. Fuerza Aerea Argentina 3808" }
     ],
-    "Pto.Madryn": [
-      { nombre: "GRANVILLE", direccion: "Belgrano 198" }
-    ]
-  },
-  "Neuquén": {
-    "Neuquen": [
-      { nombre: "PIRE RAYEN", direccion: "Lisandro de la Torre 460" }
-    ]
-  },
-  "Entre Ríos": {
-    "Concordia": [
-      { nombre: "LA CONCORDE", direccion: "Urdinarrain 322" }
+    "Jesús María": [
+      { nombre: "Montironi", direccion: "Pedro J. Frias 175" }
     ],
-    "Cpción del Uruguay": [
-      { nombre: "BANCHIK", direccion: "J.J. Bruno 3355" }
+    "Río Cuarto": [
+      { nombre: "Motcor", direccion: "Ruta 5 y Pte. Perón (O.)" }
     ],
-    "Paraná": [
-      { nombre: "NATION", direccion: "Juan del Campillo esquina Pedro Seguí" }
-    ]
-  },
-  "Santiago del Estero": {
-    "Santiago del Estero": [
-      { nombre: "LE MANS", direccion: "Av. Belgrano Sur 1385" }
-    ]
-  },
-  "Formosa": {
-    "Formosa": [
-      { nombre: "LE ROCHER", direccion: "Av. Gutnisky 1902" }
-    ]
-  },
-  "Tucumán": {
-    "Tucumán": [
-      { nombre: "INDIANA", direccion: "Italia 2945" }
-    ]
-  },
-  "Chaco": {
-    "Resistencia": [
-      { nombre: "METZ", direccion: "Av. 25 de Mayo 2350" }
+    "Río Tercero": [
+      { nombre: "Azzurra", direccion: "Av. Gral. Savio 1350" }
+    ],
+    "San Francisco": [
+      { nombre: "Turin", direccion: "Av. Urquiza 1041" }
+    ],
+    "Villa María": [
+      { nombre: "Motcor", direccion: "Av. Presidente Peron 1500" }
     ]
   },
   "Corrientes": {
     "Corrientes": [
-      { nombre: "METZ", direccion: "Av. Independencia 4165" }
+      { nombre: "Scuderia S.A.", direccion: "Ruta 5 Km 5741" }
+    ]
+  },
+  "Entre Ríos": {
+    "Chajarí": [
+      { nombre: "Full Car", direccion: "Av. 9 de Julio 2435" }
+    ],
+    "Concordia": [
+      { nombre: "Full Car", direccion: "Av. Eva Perón 2508" }
+    ],
+    "Gualeguaychú": [
+      { nombre: "Romani", direccion: "3 de caballeria 426" }
+    ],
+    "Paraná": [
+      { nombre: "Valmotors", direccion: "Calle Almafuerte 807 / 811" }
+    ]
+  },
+  "Formosa": {
+    "Formosa": [
+      { nombre: "ZL Auto", direccion: "Sarmiento 645" }
+    ]
+  },
+  "Jujuy": {
+    "San Salvador de Jujuy": [
+      { nombre: "Fadua", direccion: "Ruta Nacional 9 Colectora 1007" }
+    ]
+  },
+  "La Pampa": {
+    "General Pico": [
+      { nombre: "Genova Automotores", direccion: "Calle 9 nro. 863 (Oeste)" }
+    ],
+    "Santa Rosa": [
+      { nombre: "Genova Automotores", direccion: "Av. P. Luro 1795" }
+    ]
+  },
+  "La Rioja": {
+    "La Rioja": [
+      { nombre: "Euronoa", direccion: "Av. Ortiz de Ocampo 1590" }
+    ]
+  },
+  "Mendoza": {
+    "Guaymallén": [
+      { nombre: "Denver", direccion: "Av. 25 de Mayo 5555" },
+      { nombre: "Lorenzo Automotores", direccion: "Bandera de los Andes 1531" }
+    ],
+    "San Martín": [
+      { nombre: "Denver", direccion: "Alem 601" }
+    ],
+    "San Rafael": [
+      { nombre: "Lorenzo Automotores", direccion: "Av. Mitre 575 / 585 / 589" }
+    ]
+  },
+  "Misiones": {
+    "Posadas": [
+      { nombre: "Seewald Auto", direccion: "Av. Bustamante 2914" }
+    ]
+  },
+  "Neuquén": {
+    "Neuquén": [
+      { nombre: "Pire Rayen Automotores", direccion: "Gdor. Emilio Belenguer 2475" }
+    ]
+  },
+  "Río Negro": {
+    "Bariloche": [
+      { nombre: "Taraborelli Automobile S.A.", direccion: "Vice Almirante O'Connor N°1018" }
+    ],
+    "Viedma": [
+      { nombre: "Bahía Automotores", direccion: "Artémides Zatti 459" }
+    ]
+  },
+  "Salta": {
+    "Salta": [
+      { nombre: "Fadua", direccion: "Av. Palacios 2650" }
+    ]
+  },
+  "San Juan": {
+    "San Juan": [
+      { nombre: "Itala", direccion: "Av. Circunvalación 281" }
+    ]
+  },
+  "San Luis": {
+    "San Luis": [
+      { nombre: "Parra e Hijos", direccion: "Avenida España 1099" },
+      { nombre: "Parra e Hijos", direccion: "Av. Ejército de Los Andes 1228" }
+    ],
+    "Villa Mercedes": [
+      { nombre: "Parra e Hijos", direccion: "25 de Mayo 100" }
+    ]
+  },
+  "Santa Cruz": {
+    "Río Gallegos": [
+      { nombre: "Centenario", direccion: "Avenida Gregores y Beccar" }
+    ]
+  },
+  "Santa Fé": {
+    "Firmat": [
+      { nombre: "Mendez Automotores", direccion: "Sarmiento 1344" }
+    ],
+    "Rafaela": [
+      { nombre: "Valmotors", direccion: "Conscripto Zurbriggen 667 – Ruta 34 Km 222" }
+    ],
+    "Reconquista": [
+      { nombre: "Taller Trosch Autos", direccion: "Hipólito Irigoyen 762" }
+    ],
+    "Rosario": [
+      { nombre: "Avec", direccion: "Necochea 2601" },
+      { nombre: "Seprio", direccion: "Liniers 670" }
+    ],
+    "Santa Fé": [
+      { nombre: "Valmotors", direccion: "San Luis 3102" }
+    ],
+    "Venado Tuerto": [
+      { nombre: "Mendez Automotores", direccion: "Bv. 12 de octubre 950" }
+    ]
+  },
+  "Santiago del Estero": {
+    "Santiago del Estero": [
+      { nombre: "Novara Automotores", direccion: "Av. Belgrano Sud 1758 /1764" }
+    ]
+  },
+  "Tierra del Fuego": {
+    "Río Grande": [
+      { nombre: "LASAC", direccion: "Av. General Don José de San Martín 2599" }
+    ],
+    "Ushuaia": [
+      { nombre: "LASAC", direccion: "Av. Piedrabuena 256" }
+    ]
+  },
+  "Tucumán": {
+    "Concepción de Tucumán": [
+      { nombre: "Fadua", direccion: "Stewart Shipton 1585" }
+    ],
+    "San Miguel de Tucumán": [
+      { nombre: "Piazza", direccion: "Don Bosco 2519/2525" },
+      { nombre: "Piazza", direccion: "Don Bosco 2537" }
     ]
   }
 };
 
-const PROVINCIAS = [
-  "Buenos Aires",
-  "CABA",
-  "Catamarca",
-  "Chaco",
-  "Chubut",
-  "Corrientes",
-  "Córdoba",
-  "Entre Ríos",
-  "Formosa",
-  "Jujuy",
-  "La Pampa",
-  "La Rioja",
-  "Mendoza",
-  "Misiones",
-  "Neuquén",
-  "Río Negro",
-  "Salta",
-  "San Juan",
-  "San Luis",
-  "Santa Cruz",
-  "Santa Fe",
-  "Santiago del Estero",
-  "Tierra del Fuego",
-  "Tucumán"
-];
+const PROVINCIAS = Object.keys(CONCESIONARIOS).sort();
